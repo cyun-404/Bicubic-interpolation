@@ -85,7 +85,7 @@ def bicubic(img, ratio, a):
     return dst
 
 # Read image
-img = cv2.imread('butterfly.png')
+img = cv2.imread('/content/Bicubic-interpolation/Set14/baboon.png')
 
 # Scale factor
 ratio = 2
@@ -94,4 +94,4 @@ a = -1/2
 
 dst = bicubic(img, ratio, a)
 print('Completed!')
-cv2.imwrite('bicubic_butterfly.png', dst)
+cv2.imwrite('/content/Bicubic-interpolation/Set14_x4/baboon.png', dst)
